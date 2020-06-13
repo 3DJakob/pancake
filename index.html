@@ -7,28 +7,19 @@
   <title>Pancakes</title>
 </head>
 <body>
-  <h1>Pancakes</h1>
+  <div>
+    <h1>Pancakes</h1>
+    <button onclick="startGame()">Start lobby</button>
+    <div id="lobbys">
+
+    </div>
+
+  </div>
+
 
 
   <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-<script>
-  // origin = http(s)://(hostname):(port)
-  // The Socket.io client needs an origin
-  // with an http(s) protocol for the initial handshake.
-  // Web sockets don't run over the http(s) protocol,
-  // so you don't need to provide URL pathnames.
-  var origin = window.location.origin
-  var socket = io.connect(origin)
-  socket.on('news', function (data) {
-    console.log(data)
-    socket.emit('my other event', { my: 'data' })
-  })
-</script>
-
-  <!-- <script src="/socket.io/socket.io.js"></script> -->
-  <!-- <script src="./assets/js/app.js"></script> -->
-  <script>
-    // const socket = io();
-  </script>
+  <!-- <script src="/assets/js/app.js"></script> -->
+  <script src="bundle.js"></script>
 </body>
 </html>

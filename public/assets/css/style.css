@@ -1,7 +1,11 @@
 body {
   margin: 0;
+  background-color: #c9cba3;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, div {
   font-family: sans-serif;
+  color: #fff;
 }
